@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+
+<body>
+    <div class="playlistContainer">
+    <button id="create-playlist">Create New Playlist</button>
+    <select id="select-playlist">
+        <option value="">Alege Playlist</option>
+    </select>
+    <input type="text" id="new-playlist-name" placeholder="New Playlist name">
+    <button id="add-to-playlist">Add to Playlist</button>
+    </div>
+
+    <ul id="playlist"></ul>
+    
+    
+    <div class="upload-container">
+        <label for="file-input" class="file-upload-btn">Upload MP3</label>
+        <input type="file" id="file-input" multiple accept=".mp3" style="display: none;" />
+    </div>
+    
+
+    <div id="controls">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="next">Next</button>
+    </div>
+    
+    <audio id="audio-player" controls></audio>
+    
+    <div id="file-list"></div>
+
+    <script src="script.js"></script>
+    <script src="effect.js"></script>
+</body>
+</html>
